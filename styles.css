@@ -1,4 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap");
 html {
   display: flex;
   justify-content: center;
@@ -7,6 +8,10 @@ html {
 body {
   width: 98vw;
   height: 100%;
+  font-size: 30px;
+  color: black;
+  font-weight: normal;
+  font-family: "Cormorant Garamond", serif;
 }
 
 header {
@@ -126,10 +131,10 @@ header img {
   background-color: rgba(255, 166, 0, 0);
   min-width: 300px;
   width: 20vw;
-  height: 60vh;
+  min-height: 60vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 30vh auto;
 }
 .image_tile_container .large_image img {
   grid-row: 1;
@@ -208,6 +213,12 @@ header img {
 }
 
 footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+footer .icons {
+  grid-row: 1;
   border: 1px solid rgba(255, 0, 0, 0);
   background-color: rgba(255, 155, 155, 0);
   height: 15vh;
@@ -217,9 +228,16 @@ footer {
   align-items: center;
   flex-direction: row;
 }
-footer img {
+footer .icons img {
   width: 200px;
   height: auto;
+}
+footer p {
+  grid-row: 2;
+  display: flex;
+  justify-self: center;
+  align-self: end;
+  text-align: center;
 }
 
 .fa {
