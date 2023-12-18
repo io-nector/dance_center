@@ -236,9 +236,8 @@ footer .contact_info {
   grid-row: 2;
   display: flex;
   justify-content: center;
-  align-items: end;
-}
-footer .contact_info p {
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
