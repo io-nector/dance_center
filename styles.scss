@@ -247,7 +247,7 @@ header {
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
 
     .icons {
         grid-row: 1;
