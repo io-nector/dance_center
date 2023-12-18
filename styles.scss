@@ -247,7 +247,7 @@ header {
 footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 20vh auto;
 
     .icons {
         grid-row: 1;
@@ -259,18 +259,20 @@ footer {
         align-items: center;
         flex-direction: row;
         img {
-            width: 200px;
-            height: auto;
+            width: auto;
+            height: 100%;
         }
     }
-
-    p {
+    .contact_info{
         grid-row: 2;
         display: flex;
-        justify-self: center;
-        align-self: end;
-        text-align: center;
+        justify-content: center;
+        align-items: end;
+        
+    p {
+      text-align: center;
     }
+}
 }
 
 //---note --------

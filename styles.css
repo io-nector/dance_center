@@ -215,7 +215,7 @@ header img {
 footer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: 20vh auto;
 }
 footer .icons {
   grid-row: 1;
@@ -229,14 +229,16 @@ footer .icons {
   flex-direction: row;
 }
 footer .icons img {
-  width: 200px;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
-footer p {
+footer .contact_info {
   grid-row: 2;
   display: flex;
-  justify-self: center;
-  align-self: end;
+  justify-content: center;
+  align-items: end;
+}
+footer .contact_info p {
   text-align: center;
 }
 
